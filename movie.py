@@ -30,6 +30,7 @@ def predict_ratings(user_id, movie_title):
 
     predicted_rating = sum([r * s for r, s in zip(ratings, similarities)]) / sum(similarities)
     return predicted_rating
+    
 # Recommend Movies
 def recommend_movies(user_id, num_recommendations):
     user_ratings = user_movie_matrix.loc[user_id]
