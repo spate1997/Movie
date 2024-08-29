@@ -49,3 +49,4 @@ def recommend_movies(user_id, num_recommendations):
 user_id = 1
 num_recommendations = 5
 print(recommend_movies(user_id, num_recommendations))
+
